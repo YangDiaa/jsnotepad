@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goto about测试页面</title>
+    <link rel="stylesheet" href="./dlg-about.css">
+</head>
+<body>
+    <input id="popup" type="button" value="弹出对话框">
+    <hr>
+    <!-- <div class="notepad-dlg-about">
+        <div class="dialogbox">
+            <div class="titlebar">
+                <p class="title">关于'记事本'</p>
+                <span class="close-btn">✖</span>
+            </div>
+            <div class="main">
+                <h1 class="slogan">JSNotePad</h1>
+                <hr>
+                <img class="app-logo" src="./1.png"/>
+                <div class="info">
+                    <p>作者：yd</p>
+                    <p>QQ：</p>
+                    <p>仓库地址：<a href="https://github.com/YangDiaa/jsnotepad">https://github.com/YangDiaa/jsnotepad</a></p>
+                </div>
+                <input class="btn" type="button" value="确定">
+            </div>
+        </div>
+    </div> -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>    
+    <script src="//cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./dlg-about.js"></script>
+    <script>
+        $(function(){
+            var $btnDig = $('#popup');
+            $btnDig.click(function(){
+                $dlgGoto.show({
+                    
+                });
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goto dialog测试页面</title>
+    <link rel="stylesheet" href="./dlg-goto.css">
+</head>
+<body>
+    <input id="popup" type="button" value="弹出对话框">
+    <hr>
+    <!-- <div class="notepad-dlg-goto">
+        <div class="dialogbox">
+            <div class="titlebar">
+                <p class="title">转到指定行</p>
+                <span class="close-btn">✖</span>
+            </div>
+            <div class="main">
+                <label>行号(L):</label>
+                <br>
+                <input class="txt-line-num" type="text" autofocus>
+                <br>
+                <input class="btn-goto" type="button" value="转到">
+                <input class="btn-cancel" type="button" value="取消">
+            </div>
+        </div>
+    </div> -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>    
+    <script src="//cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./dlg-goto.js"></script>
+    <script>
+        $(function(){
+            var $btnDig = $('#popup');
+            $btnDig.click(function(){
+                $dlgGoto.show({
+                    num: 4,
+                    max: 8,
+                    gotoHandler:function(lines){
+                        console.log("goto btn click! GOTO %s lines.", lines);
+                    }
+                });
+            })
+
+        })
+    </script>
+</body>
+</html>
