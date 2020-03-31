@@ -9,7 +9,7 @@ var $dlgGoto =(function(){
                 +'<div class="main">'
                     +'<h1 class="slogan">JSNotePad</h1>'
                     +'<hr>'
-                    +'<img class="app-logo" src="./1.png">'
+                    +'<img class="app-logo" src="../../images/1.png">'
                     +'<div class="info">'
                         +'<p>作者：yd</p>'
                         +'<p>QQ：</p>'

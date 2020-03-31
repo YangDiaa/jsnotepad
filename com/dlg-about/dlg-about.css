@@ -54,12 +54,13 @@
     width: 40px;
     height: 40px;
     float: left;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .notepad-dlg-about .info {
     display: inline-block;
     font-size: 1em;
     height: 100px;
+    line-height: 30px;
     margin-left: 10px;
 }
 .notepad-dlg-about .btn{
