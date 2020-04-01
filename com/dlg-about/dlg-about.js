@@ -1,4 +1,4 @@
-var $dlgGoto =(function(){
+var $dlgAbout =(function(){
     var $dlg = $(''
         +'<div class="notepad-dlg-about">'
             +'<div class="dialogbox">'
