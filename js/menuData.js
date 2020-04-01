@@ -1,4 +1,4 @@
-menuData = [
+np.menuData = [
     { 
         title: '文件(F)',
         menuItems: [  
@@ -185,8 +185,8 @@ menuData = [
                 enabled: true,
                 handler: function() {
                     np.bShowStatusBar = !np.bShowStatusBar;
-                    $statusBar.display(np.bShowStatusBar);
-                    $menubar.checked(3, 0, np.bShowStatusBar);
+                    $statusBar.check(np.bShowStatusBar);
+                    $menuBar.checked(3, 0, np.bShowStatusBar);
                 }
             }
         ],
